@@ -1,7 +1,18 @@
 import React from "react";
 import { Text, Input, Grid, Button } from "../elements";
 
+import { getCookie, setCookie, deleteCookie } from "../shared/Cookie";
+
 const Login = (props) => {
+
+  console.log(getCookie("user_pwd"));
+  console.log(getCookie("user_id"));
+
+  const login = () => {
+    setCookie("user_id", "perl", 3);
+    setCookie("user_pwd", "pppp", 3);
+  }
+
   return (
     <React.Fragment>
       <Grid padding="16px">
