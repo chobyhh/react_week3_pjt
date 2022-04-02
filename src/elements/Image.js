@@ -1,11 +1,11 @@
+import styled from 'styled-components';
 import React from "react";
-import styled from "styled-components"
 
 const Image = (props) => {
-
     const {shape, src, size} = props;
+
     const styles = {
-        src :src,
+        src: src,
         size: size,
     }
 
@@ -17,31 +17,31 @@ const Image = (props) => {
 
     if(shape === "rectangle"){
         return (
-            <AspecOutter>
-                <AspecInner {...styles}></AspecInner>
-            </AspecOutter>
+            <AspectOutter>
+                <AspectInner {...styles}></AspectInner>
+            </AspectOutter>
         )
     }
 
-    return(
+    return (
         <React.Fragment>
-
+            
         </React.Fragment>
     )
-
 }
 
 Image.defaultProps = {
-    shape: "circle",
-    src: "http://t1.daumcdn.net/movie/92323f5bc322b709e2605cc5406f5349ba4304d6",
-    size: 36,
+  shape: "circle",
+  src: "https://images.chosun.com/resizer/59F_j_TEWDNXdwJCvv6vIO0v130=/1280x0/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/STSPNWSJ4BA3FLRLUP4JYHU7UU.jpg",
+  size: 36,
 };
 
-const AspecOutter = styled.div`
+const AspectOutter = styled.div`
     width: 100%;
     min-width: 250px;
 `;
-const AspecInner = styled.div`
+
+const AspectInner = styled.div`
     position: relative;
     padding-top: 75%;
     overflow: hidden;
@@ -55,10 +55,9 @@ const ImageCircle = styled.div`
     height: var(--size);
     border-radius: var(--size);
 
-    background-image: url("${(props)=>props.src}");
+    background-image: url("${(props) => props.src}");
     background-size: cover;
     margin: 4px;
 `;
-
 
 export default Image;
