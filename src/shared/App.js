@@ -1,9 +1,8 @@
-
 import './App.css';
-import React from "react";
+import React from 'react';
 
-import {BrowserRouter, Route} from "react-router-dom";
-import PostList from "../pages/PostList";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import PostList from '../pages/PostList';
 import Login from "../pages/Login";
 import Signup from "../pages/Signup";
 
@@ -13,16 +12,24 @@ import {Grid} from "../elements";
 function App() {
   return (
     <React.Fragment>
+      {/* <Router>
+        <Routes>
+          <Route path='/' element={<PostList/>} />
+        </Routes>
+      </Router> */}
       <Grid>
         <Header></Header>
-        <BrowserRouter>
-          <Route path="/" exact component={PostList} />
-          <Route path="/login" exact component={Login} />
-          <Route path="/signup" exact component={Signup}/>
-        </BrowserRouter>
+        <Router>
+          <Routes>
+          <Route path="/" element={<PostList/>} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/signup" element={<Signup/>}/>
+          </Routes>  
+        </Router>
       </Grid>
     </React.Fragment>
   );
-}
+};
+
 
 export default App;
