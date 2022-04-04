@@ -34,7 +34,7 @@ Post.defaultProps = {
         user_Profile: "https://cdn.iconsumer.or.kr/news/photo/202105/18501_22274_3050.jpg",
     },
     image_url: "https://cdn.iconsumer.or.kr/news/photo/202105/18501_22274_3050.jpg",
-    contents: "첼전드",
+    contents: "첼램덩크",
     comment_cnt: 10,
     insert_dt: "2022-04-03 10:00:00"
 }
