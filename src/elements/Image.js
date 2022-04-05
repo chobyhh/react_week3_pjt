@@ -23,7 +23,7 @@ const Image = (props) => {
 
 Image.defaultProps = {
   shape: "circle",
-  src: "https://cdn.iconsumer.or.kr/news/photo/202105/18501_22274_3050.jpg",
+  src: "https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/201911/22/ee69e453-ba32-4e0b-985d-2e2573fb6297.jpg",
   size: 40,
 };
 

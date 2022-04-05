@@ -3,6 +3,7 @@ import { Grid, Text, Input, Button } from "../elements";
 
 import { useDispatch } from "react-redux";
 import { actionCreators as userActions } from "../redux/modules/user";
+import { emailCheck } from "../shared/common";
 
 const Signup = (props) => {
 
@@ -15,8 +16,8 @@ const Signup = (props) => {
 
   const signup = () => {
 
-    if(id.indexOf("@") === -1 ){
-      alert('이메일 형식이 아닙니다');
+    if(!emailCheck(id)){
+      window.alert('이메일 형식이 맞지 않습니다!');
       return;
     }
 

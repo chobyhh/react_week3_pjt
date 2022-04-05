@@ -8,7 +8,7 @@ import { actionCreators as userAcitons } from "../redux/modules/user";
 import {history} from "../redux/configureStore";
 import { apiKey } from "../shared/firebase";
 
-import Permit from "../shared/Permit";
+//import Permit from "../shared/Permit";
 
 const Header = (props) => {
     
@@ -27,7 +27,7 @@ const Header = (props) => {
             <Grid is_flex padding="4px 16px">
               <Grid>
                 <Text margin="0px" size="24px" bold>
-                  Chelsea
+                  Canada Story
                 </Text>
               </Grid>
 
@@ -48,7 +48,7 @@ const Header = (props) => {
         <React.Fragment>
             <Grid is_flex padding="4px 16px">
                 <Grid>
-                    <Text margin="0px" size="24px" bold>Chelsea</Text>
+                    <Text margin="0px" size="24px" bold>Canada Story</Text>
                 </Grid>
                 
                 <Grid is_flex>

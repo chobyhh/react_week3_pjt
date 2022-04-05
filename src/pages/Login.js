@@ -3,7 +3,8 @@ import { Text, Input, Grid, Button } from "../elements";
 import { setCookie, getCookie, deleteCookie } from "../shared/Cookie";
 
 import { useDispatch } from "react-redux";
-import {actionCreators as userActions} from "../redux/modules/user"
+import {actionCreators as userActions} from "../redux/modules/user";
+import { emailCheck } from "../shared/common";
 
 const Login = (props) => {
 
@@ -14,8 +15,8 @@ const Login = (props) => {
     
     const login = () => {
 
-        if(id.indexOf("@") === -1){
-          alert('아이디 형식이 틀렸습니다');
+        if(!emailCheck(id)){
+          window.alert("이메일 형식이 맞지 않습니다!");
           return;
         }
 

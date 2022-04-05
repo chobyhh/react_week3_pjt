@@ -1,10 +1,11 @@
+//redux
 import {createAction, handleActions} from "redux-actions";
 import {produce} from "immer";
 
 import {setCookie, getCookie, deleteCookie} from "../../shared/Cookie"
 
 import {auth} from "../../shared/firebase";
-import firebase from "firebase/compat/app";
+import firebase from "firebase/app";
 
 //actions
 //const LOG_IN = "LOG_IN";
