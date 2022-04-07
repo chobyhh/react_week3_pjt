@@ -7,7 +7,7 @@ import "firebase/storage";
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyABospMdtOgDiR_zscvt5D5b_7amFRWXz0",
+    apiKey: "",
     authDomain: "pjt3-9210e.firebaseapp.com",
     projectId: "pjt3-9210e",
     storageBucket: "pjt3-9210e.appspot.com",
